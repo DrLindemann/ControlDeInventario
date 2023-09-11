@@ -4,15 +4,15 @@ Esta documentación describe los endpoints de la API REST de Control de Inventar
 
 ## Obtener todos los productos
 
-- **URL:** `/api/productos/`
-- **Método:** GET
-- **Descripción:** Devuelve una lista de todos los productos en el inventario.
+- URL: "/api/productos/"
+- Método: GET
+- Descripción: Devuelve una lista de todos los productos en el inventario.
 
-## Obtener un producto por ID
+# Obtener un producto por ID
 
-- **URL:** `/api/productos/{id}`
+- URL: "/api/productos/{id}"
 - **Método:** GET
-- **Parámetros de ruta:** `{id}` es el ID del producto que se desea recuperar.
+- **Parámetros de ruta:** "{id}" es el ID del producto que se desea recuperar.
 - **Descripción:** Devuelve el producto correspondiente al ID proporcionado.
 
 # Crear un nuevo producto
