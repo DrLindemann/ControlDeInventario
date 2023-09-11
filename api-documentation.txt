@@ -1,0 +1,47 @@
+# Documentación de la API de Control de Inventario
+
+Esta documentación describe los endpoints de la API REST de Control de Inventario, que permite gestionar productos en un inventario.
+
+## Obtener todos los productos
+
+- **URL:** `/api/productos/`
+- **Método:** GET
+- **Descripción:** Devuelve una lista de todos los productos en el inventario.
+
+## Obtener un producto por ID
+
+- **URL:** `/api/productos/{id}`
+- **Método:** GET
+- **Parámetros de ruta:** `{id}` es el ID del producto que se desea recuperar.
+- **Descripción:** Devuelve el producto correspondiente al ID proporcionado.
+
+# Crear un nuevo producto
+
+- URL: "/api/productos/"
+- Método: POST
+- Cuerpo de la solicitud: JSON que contiene los atributos del nuevo producto.
+- Descripción: Crea un nuevo producto en el inventario y devuelve el producto creado con su ID asignado.
+
+# Actualizar un producto existente
+
+- URL: "/api/productos/{id}"
+- Método: PUT
+- Parámetros de ruta: "{id}" es el ID del producto que se desea actualizar.
+- Cuerpo de la solicitud: JSON que contiene los nuevos valores para los atributos del producto.
+- Descripción: Actualiza un producto existente en el inventario y devuelve el producto actualizado.
+
+# Eliminar un producto
+
+- URL: "/api/productos/{id}"
+- Método: DELETE
+- Parámetros de ruta: "{id}" es el ID del producto que se desea eliminar.
+- Descripción: Elimina un producto del inventario según el ID proporcionado.
+
+# Ejemplo de solicitud POST para crear un producto:
+
+json
+{
+    "nombre": "Producto",
+    "precio": 19.99,
+    "cantidad": 52
+}
